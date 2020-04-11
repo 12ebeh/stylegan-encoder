@@ -18,7 +18,7 @@ def split_to_batches(l, n):
         yield l[i:i + n]
 
 
-def run(src_dir, generated_images_dir, dlatent_dir,
+def encode(src_dir, generated_images_dir, dlatent_dir,
     batch_size=1, image_size=256, lr=1, iterations=1000, randomize_noise=False):
     """
     Find latent representation of reference images using perceptual loss

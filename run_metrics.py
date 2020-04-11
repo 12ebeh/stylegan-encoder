@@ -59,7 +59,7 @@ def run_all_snapshots(submit_config, metric_args, run_id):
 
 #----------------------------------------------------------------------------
 
-def main():
+def run_metrics():
     submit_config = dnnlib.SubmitConfig()
 
     # Which metrics to evaluate?
@@ -96,10 +96,3 @@ def main():
                 submit_config.run_desc += '-%s' % task.run_id
             submit_config.run_desc += '-%dgpu' % submit_config.num_gpus
             dnnlib.submit_run(submit_config, metric_args=metric, **task)
-
-#----------------------------------------------------------------------------
-
-if __name__ == "__main__":
-    main()
-
-#----------------------------------------------------------------------------

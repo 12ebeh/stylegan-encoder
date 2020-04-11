@@ -141,7 +141,7 @@ def draw_truncation_trick_figure(png, Gs, w, h, seeds, psis):
 #----------------------------------------------------------------------------
 # Main program.
 
-def main():
+def generate():
     tflib.init_tf()
     os.makedirs(config.result_dir, exist_ok=True)
     draw_uncurated_result_figure(os.path.join(config.result_dir, 'figure02-uncurated-ffhq.png'), load_Gs(url_ffhq), cx=0, cy=0, cw=1024, ch=1024, rows=3, lods=[0,1,2,2,3,3], seed=5)
@@ -152,10 +152,3 @@ def main():
     draw_uncurated_result_figure(os.path.join(config.result_dir, 'figure10-uncurated-bedrooms.png'), load_Gs(url_bedrooms), cx=0, cy=0, cw=256, ch=256, rows=5, lods=[0,0,1,1,2,2,2], seed=0)
     draw_uncurated_result_figure(os.path.join(config.result_dir, 'figure11-uncurated-cars.png'), load_Gs(url_cars), cx=0, cy=64, cw=512, ch=384, rows=4, lods=[0,1,2,2,3,3], seed=2)
     draw_uncurated_result_figure(os.path.join(config.result_dir, 'figure12-uncurated-cats.png'), load_Gs(url_cats), cx=0, cy=0, cw=256, ch=256, rows=5, lods=[0,0,1,1,2,2,2], seed=1)
-
-#----------------------------------------------------------------------------
-
-if __name__ == "__main__":
-    main()
-
-#----------------------------------------------------------------------------

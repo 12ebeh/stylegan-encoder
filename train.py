@@ -172,7 +172,7 @@ if 0:
 # Main entry point for training.
 # Calls the function indicated by 'train' using the selected options.
 
-def main():
+def train_gan():
     kwargs = EasyDict(train)
     kwargs.update(G_args=G, D_args=D, G_opt_args=G_opt, D_opt_args=D_opt, G_loss_args=G_loss, D_loss_args=D_loss)
     kwargs.update(dataset_args=dataset, sched_args=sched, grid_args=grid, metric_arg_list=metrics, tf_config=tf_config)
@@ -181,10 +181,3 @@ def main():
     kwargs.submit_config.run_dir_ignore += config.run_dir_ignore
     kwargs.submit_config.run_desc = desc
     dnnlib.submit_run(**kwargs)
-
-#----------------------------------------------------------------------------
-
-if __name__ == "__main__":
-    main()
-
-#----------------------------------------------------------------------------

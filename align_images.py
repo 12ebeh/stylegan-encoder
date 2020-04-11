@@ -16,7 +16,7 @@ def unpack_bz2(src_path):
     return dst_path
 
 
-def run(raw_img_dir, aligned_img_dir):
+def align(raw_img_dir, aligned_img_dir):
     landmarks_model_path = unpack_bz2(get_file('shape_predictor_68_face_landmarks.dat.bz2',
                                                LANDMARKS_MODEL_URL, cache_subdir='temp'))
     RAW_IMAGES_DIR = raw_img_dir
