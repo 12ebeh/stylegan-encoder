@@ -16,16 +16,11 @@ def unpack_bz2(src_path):
     return dst_path
 
 
-if __name__ == "__main__":
-    """
-    Extracts and aligns all faces from images using DLib and a function from original FFHQ dataset preparation step
-    python align_images.py /raw_images /aligned_images
-    """
-
+def run(raw_img_dir, aligned_img_dir):
     landmarks_model_path = unpack_bz2(get_file('shape_predictor_68_face_landmarks.dat.bz2',
                                                LANDMARKS_MODEL_URL, cache_subdir='temp'))
-    RAW_IMAGES_DIR = sys.argv[1]
-    ALIGNED_IMAGES_DIR = sys.argv[2]
+    RAW_IMAGES_DIR = raw_img_dir
+    ALIGNED_IMAGES_DIR = aligned_img_dir
 
     landmarks_detector = LandmarksDetector(landmarks_model_path)
     for img_name in os.listdir(RAW_IMAGES_DIR):
