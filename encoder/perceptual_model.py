@@ -1,9 +1,9 @@
 import numpy as np
 import tensorflow as tf
-from keras.models import Model
-from keras.applications.vgg16 import VGG16, preprocess_input
-from keras.preprocessing import image
-import keras.backend as K
+from tensorflow.keras.models import Model
+from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input
+from tensorflow.keras.preprocessing import image
+import tensorflow.keras.backend as K
 
 
 def load_images(images_list, img_size):
