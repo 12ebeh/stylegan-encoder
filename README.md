@@ -8,9 +8,9 @@
 
 *The generated image*
 
-1) ppt presentation in 'ppt\StyleGAN_FINAL.ppt'
+1) ppt presentation in `ppt\StyleGAN_FINAL.ppt`
 2) Notebook used to generate all faces are found in `generate_faces_with_StyleGAN.ipynb`
-3) Notebook used to train any latent directions are found in `Latent_Directions`
+3) Notebook used to train any latent directions are found in `Latent_Directions.ipynb`
 
 Short explanation of encoding approach:
 0) Original pre-trained StyleGAN generator is used for generating images
