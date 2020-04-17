@@ -1,7 +1,7 @@
 import os
 import argparse
 import numpy as np
-from utils import stylegan_utils
+from server.style_encoder.utils import stylegan_utils
 
 
 def main():
@@ -23,7 +23,7 @@ def main():
         os.mkdir(args.generated_img_dir)
     
     if not os.path.isdir(args.dlatent_dir):
-        os.mkdir(args.dlatentdir)
+        os.mkdir(args.dlatent_dir)
     
     # Initalized the stylegan utils
     stylegan = stylegan_utils()
