@@ -3,16 +3,17 @@
 ![TensorFlow 1.10](https://img.shields.io/badge/tensorflow-1.10-green.svg?style=plastic)
 ![cuDNN 7.3.1](https://img.shields.io/badge/cudnn-7.3.1-green.svg?style=plastic)
 ![License CC BY-NC](https://img.shields.io/badge/license-CC_BY--NC-green.svg?style=plastic)
-
+StyleGAN: State of the Art Face Morphing - Understanding StyleGAN and its applications
 ![Teaser image](./teaser.png)
 
-*The generated image*
+*Edited images by moving them along the 'gender direction'*
 
 1) ppt presentation in `ppt\StyleGAN_FINAL.ppt`
 2) Notebook used to generate all faces are found in `generate_faces_with_StyleGAN.ipynb`
 3) Notebook used to train any latent directions are found in `Latent_Directions.ipynb`
 
 Short explanation of encoding approach:
+
 0) Original pre-trained StyleGAN generator is used for generating images
 1) Pre-trained VGG16 network is used for transforming a reference image and generated image into high-level features space
 2) Loss is calculated as a difference between them in the features space
