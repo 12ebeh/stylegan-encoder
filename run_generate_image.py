@@ -26,9 +26,10 @@ def main():
     generator, Gs  = stylegan.initUtils()
 
     # Loading already learned latent directions
-    smile_direction = np.load('ffhq_dataset/latent_directions/smile.npy')
-    gender_direction = np.load('ffhq_dataset/latent_directions/gender.npy')
-    age_direction = np.load('ffhq_dataset/latent_directions/age.npy')
+    latentdirections_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ffhq_dataset', 'latent_directions')
+    smile_direction = np.load(os.path.join(latentdirections_dir, 'smile.npy'))
+    gender_direction = np.load(os.path.join(latentdirections_dir, 'gender.npy'))
+    age_direction = np.load(os.path.join(latentdirections_dir, 'age.npy'))
 
     char_latent = args.blend_coeff * first_latent.copy() + (1-(args.blend_coeff)) * second_latent.copy()
     char_latent += smile_direction * args.smile_coeff
