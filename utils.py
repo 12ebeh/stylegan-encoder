@@ -1,4 +1,7 @@
 import os
+os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
+os.environ['CUDA_VISIBLE_DEVICES'] = '7'
+
 import moviepy.editor
 import pickle
 import PIL.Image
@@ -118,7 +121,7 @@ class stylegan_utils:
         ALIGNED_IMAGES_DIR = aligned_img_dir
         
         self.landmarks_model_path = self._unpack_bz2(get_file('shape_predictor_68_face_landmarks.dat.bz2',
-                                                         images_align_tool.LANDMARKS_MODEL_URL, cache_subdir='temp'))
+                                                         stylegan_utils.LANDMARKS_MODEL_URL, cache_subdir='temp'))
 
         landmarks_detector = LandmarksDetector(self.landmarks_model_path)
         for img_name in os.listdir(RAW_IMAGES_DIR):
