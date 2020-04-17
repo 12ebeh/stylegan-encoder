@@ -12,6 +12,7 @@
 1) ppt presentation in `ppt\StyleGAN_FINAL.ppt`
 2) Notebook used to generate all faces are found in `generate_faces_with_StyleGAN.ipynb`
 3) Notebook used to train any latent directions are found in `Latent_Directions.ipynb`
+4) Refactored code to serve these transformations as a webapp are found in `run_generate_image.py`, `run_generate_video.py`, `run_latent_extraction.py`. Link to website TBD.
 
 Short explanation of encoding approach:
 
