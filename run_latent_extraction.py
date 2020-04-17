@@ -1,7 +1,7 @@
 import os
 import argparse
 import numpy as np
-from server.style_encoder.utils import stylegan_utils
+from utils import stylegan_utils
 
 
 def main():
