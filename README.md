@@ -6,7 +6,11 @@
 
 ![Teaser image](./teaser.png)
 
-*The generated image is not a real person; a latent representation of two Game of Thrones characters was found by using perceptual loss trick. Then these representations were combined using the style mixing technique and transformed back into an image.*
+*The generated image*
+
+1) ppt presentation in 'ppt\StyleGAN_FINAL.ppt'
+2) Notebook used to generate all faces are found in `generate_faces_with_StyleGAN.ipynb`
+3) Notebook used to train any latent directions are found in `Latent_Directions`
 
 Short explanation of encoding approach:
 0) Original pre-trained StyleGAN generator is used for generating images
@@ -14,9 +18,6 @@ Short explanation of encoding approach:
 2) Loss is calculated as a difference between them in the features space
 3) Optimization is performed only for latent representation which we want to obtain. 
 4) Upon completion of optimization you are able to transform your latent vector as you wish. For example you can find a "smiling direction" in your latent space, move your latent vector in this direction and transform it back to image using the generator. 
-
-**New scripts for finding your own directions will be realised soon. For now you can play with existing ones: smiling, age, gender.**
-**More examples you can find in the [Jupyter notebook](https://github.com/iyaja/stylegan-encoder/blob/master/generate_GoT_characters_with_StyleGAN.ipynb)**
 
 ### Generating latent representation of your images
 You can generate latent representations of your own images using two scripts:
