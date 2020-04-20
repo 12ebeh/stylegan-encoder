@@ -7,6 +7,8 @@
 
 ![Teaser image](./teaser.png)
 
+[![Video](https://www.youtube.com/watch?v=dLnn-fx1cWM&feature=youtu.be)](https://www.youtube.com/watch?v=dLnn-fx1cWM&feature=youtu.be)
+
 *Edited images by moving them along the 'gender direction'*
 
 1) ppt presentation in `ppt\StyleGAN_FINAL.ppt`
