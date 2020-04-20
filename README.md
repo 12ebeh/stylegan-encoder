@@ -7,7 +7,7 @@
 
 ![Teaser image](./teaser.png)
 
-[![Video](https://www.youtube.com/watch?v=dLnn-fx1cWM&feature=youtu.be)](https://www.youtube.com/watch?v=dLnn-fx1cWM&feature=youtu.be)
+[![Video](https://user-images.githubusercontent.com/34482689/79776178-ed0ace80-8367-11ea-9cf0-b46aeab53a3a.JPG)](https://www.youtube.com/watch?v=dLnn-fx1cWM&feature=youtu.be)
 
 *Edited images by moving them along the 'gender direction'*
 
