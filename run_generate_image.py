@@ -1,4 +1,5 @@
 import os
+import sys
 import argparse
 import numpy as np
 from utils import stylegan_utils
@@ -44,3 +45,4 @@ def main():
 if __name__ == "__main__":
     ret = main()
     print(ret)
+    sys.exit(0)
